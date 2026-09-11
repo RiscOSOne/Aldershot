@@ -109,7 +109,13 @@ RISC OS Open Ltd and you get it from them.
 
 The Mac application is built on **[QEMU](https://www.qemu.org)**, the
 machine emulator that does the hard part — pretending to be a Raspberry
-Pi convincingly enough that RISC OS never notices. Its source lives at
-**[gitlab.com/qemu-project/qemu](https://gitlab.com/qemu-project/qemu)**,
-and the changes that make RISC OS work are the fork linked above. Our
-thanks to everyone who built it.
+Pi convincingly enough that RISC OS never notices. Our thanks to everyone
+who built it.
+
+**The source for what we release is here:**
+
+- **[albanread/RISCOSQEMUA72](https://github.com/albanread/RISCOSQEMUA72)**
+  — our fork, branch `riscos-pi4`. This is the one. Everything that makes
+  RISC OS run, and the Mac application itself, lives here.
+- [gitlab.com/qemu-project/qemu](https://gitlab.com/qemu-project/qemu) —
+  upstream QEMU, which the fork is based on.
