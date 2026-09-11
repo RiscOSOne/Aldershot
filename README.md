@@ -93,11 +93,14 @@ Nothing to download yet. When there is, it'll be on this repository's
 
 ## The small print
 
-The software is free and open source. Each project keeps its own code and
-its own licence in its own place — for the Mac one that's
-[RISCOSQEMUA72](https://github.com/albanread/RISCOSQEMUA72), where you'll
-also find a long and fairly candid account of how it was built, if you're
-curious about that sort of thing.
+The software is free and open source, under the
+[GNU General Public License, version 2](LICENSE) — the same licence QEMU
+uses, which the Mac application is built from.
+
+Each project also keeps its own code in its own place. For the Mac one
+that's [RISCOSQEMUA72](https://github.com/albanread/RISCOSQEMUA72), where
+you'll find a long and fairly candid account of how it was built, if
+you're curious about that sort of thing.
 
 **RISC OS itself is not distributed here**, in any form. It belongs to
 RISC OS Open Ltd and you get it from them.
