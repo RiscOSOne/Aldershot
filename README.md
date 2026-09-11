@@ -34,9 +34,30 @@ open the app and RISC OS starts up.
 - **Browse the web** with NetSurf, over your Mac's internet connection
 - **Hear it** — sound comes out of your Mac's speakers
 - **Type and click** normally
+- **Fill your screen** — see below
 
 It takes about **twenty seconds** from starting the app to a desktop you
 can use.
+
+### Screen sizes
+
+RISC OS is not stuck at the small sizes an emulator usually gives you. It
+offers the same list a real monitor would, and you pick from RISC OS's own
+Display Manager while it is running:
+
+640×480 · 800×600 · 1024×768 · 1280×720 · 1280×800 · 1280×1024 ·
+1440×900 · 1600×1200 · 1920×1080 · **1920×1200**
+
+The last two are the interesting ones on a Mac. **1920×1200** is 16:10,
+which is the shape of a MacBook screen, so a RISC OS desktop fills it
+properly rather than sitting in a letterbox — and on a Retina display it
+lands one RISC OS pixel to one screen pixel, which is about as sharp as
+it gets.
+
+You can also start up in a particular size rather than picking one each
+time. The window opens to match whatever RISC OS is running, and you can
+resize it freely afterwards — the picture scales to fit, so a big desktop
+in a small window still works.
 
 ### The three mouse buttons
 
@@ -74,7 +95,6 @@ A few other honest notes:
 
 - You can't drag files from your Mac into RISC OS yet. Anything you want
   in there has to be on the disc image already.
-- Changing the screen resolution while it's running doesn't work properly.
 - The volume control inside RISC OS doesn't do anything — use your Mac's.
 - The first few seconds of startup are slower than they ought to be.
 
