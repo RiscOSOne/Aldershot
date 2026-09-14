@@ -3,8 +3,10 @@
 **RISC OS, on the computer you already own.**
 
 This is the front door. It is where you find out what exists, whether it
-works yet, and where to get it. There is no software in this repository
-itself — just these pages and, when things are ready, the downloads.
+works yet, and where to get it. There is no source code in this
+repository — just these pages, the user guide, the developer
+walkthroughs, and the downloads on the
+[Releases](https://github.com/albanread/Aldershot/releases) page.
 
 ---
 
@@ -12,7 +14,7 @@ itself — just these pages and, when things are ready, the downloads.
 
 | | | |
 | --- | --- | --- |
-| 🍎 | **[RISC OS for the Mac](#risc-os-for-the-mac)** | Works. **[Download RISCOSQEA72v1](https://github.com/albanread/Aldershot/releases/tag/RISCOSQEA72v1)** for Apple silicon · [User guide](mac/user-guide.md) |
+| 🍎 | **[RISC OS for the Mac](#risc-os-for-the-mac)** | Works on **macOS 26**. Download for [Apple silicon](https://github.com/albanread/Aldershot/releases/download/RISCOSQEA72v1/RISCOSQEA72v1.dmg) or [Intel](https://github.com/albanread/Aldershot/releases/download/RISCOSQEA72v1/RISCOSQEA72v1-x86_64.dmg) · [User guide](mac/user-guide.md) |
 | 🪟 | **[RISC OS for Windows](#risc-os-for-windows)** | Works. No download yet — see below. |
 
 More will be added as they become worth your time. Something is listed
@@ -32,7 +34,7 @@ It works by pretending to be a Raspberry Pi, which is the machine RISC OS
 is built for these days. You do not have to know or care about that; you
 open the app and RISC OS starts up.
 
-> **[Download RISCOSQEA72v1 for Apple silicon](https://github.com/albanread/Aldershot/releases/tag/RISCOSQEA72v1)** · [User guide](mac/user-guide.md)
+> **Download RISCOSQEA72v1** for macOS 26: **[Apple silicon](https://github.com/albanread/Aldershot/releases/download/RISCOSQEA72v1/RISCOSQEA72v1.dmg)** · **[Intel](https://github.com/albanread/Aldershot/releases/download/RISCOSQEA72v1/RISCOSQEA72v1-x86_64.dmg)** · [User guide](mac/user-guide.md)
 
 ### What you can do with it
 
@@ -46,8 +48,8 @@ open the app and RISC OS starts up.
 - **Type and click** normally
 - **Fill your screen** — see below
 
-It takes about **twenty seconds** from starting the app to a desktop you
-can use.
+On an Apple silicon Mac it takes about **twenty seconds** from starting
+the app to a desktop you can use.
 
 ### Screen sizes
 
@@ -84,8 +86,17 @@ Option-click and Shift-click also give you Adjust, if either is comfier.
 
 ### What you'll need
 
-**A Mac with Apple silicon** — an M1 or newer — running **macOS 26** or
-later.
+**A Mac running macOS 26** or later. That is the one real requirement:
+if your Mac runs macOS 26, it runs RISC OS — Apple silicon or Intel.
+There are two downloads, one for each kind of processor:
+
+| Your Mac | Download |
+| --- | --- |
+| **Apple silicon** (M1 or newer) | [RISCOSQEA72v1.dmg](https://github.com/albanread/Aldershot/releases/download/RISCOSQEA72v1/RISCOSQEA72v1.dmg) |
+| **Intel** | [RISCOSQEA72v1-x86_64.dmg](https://github.com/albanread/Aldershot/releases/download/RISCOSQEA72v1/RISCOSQEA72v1-x86_64.dmg) |
+
+Not sure which you have? **Apple menu › About This Mac** shows the chip
+and the macOS version.
 
 That's it. RISC OS itself is in the download:
 
@@ -99,13 +110,14 @@ That's it. RISC OS itself is in the download:
   of utilities. No developer tools, no app store, no manuals, no games —
   enough to use, small enough to download.
 
-There is nothing to fetch from anywhere else and nothing to set up.
+Both downloads carry the same RISC OS and the same disc. There is
+nothing to fetch from anywhere else and nothing to set up.
 
 ### Installing it
 
-Open the disk image and drag **RISCOSQEA72v1** to Applications, then
-open it. It is signed and notarised, so macOS only asks, the first time,
-whether you're sure about an app you downloaded.
+Download the disk image for your Mac, open it and drag **RISCOSQEA72v1**
+to Applications, then open it. It is signed and notarised, so macOS only
+asks, the first time, whether you're sure about an app you downloaded.
 
 On its first run the app asks where to keep the RISC OS disc: a folder
 called **RISCOS** in your home folder, or one you choose. That folder is
@@ -122,7 +134,8 @@ what to do when something goes wrong.
 but it hasn't had the polish a finished thing deserves. A few honest
 notes:
 
-- It needs macOS 26. Older systems will refuse to run it, for now.
+- It needs macOS 26. A Mac on an older version of macOS will refuse to
+  open it, for now.
 - The volume control inside RISC OS doesn't do anything — use your Mac's.
 - The first few seconds of startup are slower than they ought to be.
 - On a high-resolution screen the window opens small — one RISC OS pixel
@@ -236,8 +249,10 @@ but it hasn't had the polish a finished thing deserves.
 
 ## Downloads
 
-- **Mac, Apple silicon:** [RISCOSQEA72v1](https://github.com/albanread/Aldershot/releases/tag/RISCOSQEA72v1), a disk image. Open it
-  and drag the app to Applications. Read the [user guide](mac/user-guide.md).
+- **Mac, macOS 26:** RISCOSQEA72v1 for [Apple silicon](https://github.com/albanread/Aldershot/releases/download/RISCOSQEA72v1/RISCOSQEA72v1.dmg) or for
+  [Intel](https://github.com/albanread/Aldershot/releases/download/RISCOSQEA72v1/RISCOSQEA72v1-x86_64.dmg), a disk image. Open it and drag the app to Applications.
+  The [release page](https://github.com/albanread/Aldershot/releases/tag/RISCOSQEA72v1) has the checksums, and the
+  [user guide](mac/user-guide.md) the rest.
 - **Windows:** nothing to download yet.
 
 Every release is on this repository's

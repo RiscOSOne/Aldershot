@@ -23,17 +23,23 @@ to use RISC OS, not build it.
 
 ## What you need
 
-- **A Mac with Apple silicon**, M1 or newer.
-- **macOS 26** or later. Earlier versions of macOS will not open it.
+**A Mac running macOS 26** or later. That is the one real requirement:
+the app runs on any Mac that runs macOS 26, with Apple silicon or with an
+Intel processor. Earlier versions of macOS will not open it.
 
-Nothing else. RISC OS itself is inside the app: RISC OS Open's 5.30
-Raspberry Pi ROM, with our HostFS filing system added, and a minimal
+To check your Mac, choose **Apple menu › About This Mac**. It shows the
+chip, Apple M-something or Intel, and the macOS version.
+
+Nothing else is needed. RISC OS itself is inside the app: RISC OS Open's
+5.30 Raspberry Pi ROM, with our HostFS filing system added, and a minimal
 disc for it to boot from.
 
 ## Installing
 
-1. Download **RISCOSQEA72v1.dmg** from the
-   [Releases page](https://github.com/albanread/Aldershot/releases).
+1. Download the disk image for your Mac from the
+   [release page](https://github.com/albanread/Aldershot/releases/tag/RISCOSQEA72v1):
+   **[RISCOSQEA72v1.dmg](https://github.com/albanread/Aldershot/releases/download/RISCOSQEA72v1/RISCOSQEA72v1.dmg)** for Apple silicon, or
+   **[RISCOSQEA72v1-x86_64.dmg](https://github.com/albanread/Aldershot/releases/download/RISCOSQEA72v1/RISCOSQEA72v1-x86_64.dmg)** for an Intel Mac.
 2. Open it, and drag **RISCOSQEA72v1** onto the **Applications** folder
    beside it.
 3. Open the app from Applications.
@@ -53,8 +59,9 @@ the app runs it asks where that folder should be:
   is best, because it becomes the disc. If the folder already holds
   files, they are left alone: nothing of yours is overwritten.
 
-The app then copies the RISC OS disc into that folder and starts. It takes
-about twenty seconds from here to a desktop you can use. You will see the
+The app then copies the RISC OS disc into that folder and starts. On an
+Apple silicon Mac it takes about twenty seconds from here to a desktop
+you can use. You will see the
 boot screen, with its progress bar, and then the desktop.
 
 The app remembers the folder. Later versions of the app never replace a
@@ -97,7 +104,8 @@ window freely. A middle click, on a mouse that has one, also grabs it.
 ## Screen sizes
 
 RISC OS starts at 800×600. To change it, click the monitor icon near the
-right-hand end of the icon bar and pick a size:
+right-hand end of the icon bar. In the window that opens, pick a
+**Resolution** and click **Change**. The sizes on offer are:
 
 640×480 · 800×600 · 1024×768 · 1280×720 · 1280×800 · 1280×1024 ·
 1440×900 · 1600×1200 · 1920×1080 · 1920×1200
@@ -195,8 +203,9 @@ one in RISC OS does not do anything.
 
 ## When something goes wrong
 
-- **The app does not open at all.** Check that your Mac has Apple silicon
-  and macOS 26 or later.
+- **The app does not open at all.** Check that your Mac runs macOS 26 or
+  later, and that you downloaded the disk image for its processor: Apple
+  silicon or Intel.
 - **It asks for the disc folder every time.** The folder it was using has
   been moved, renamed or deleted, or is on a drive that is not connected.
   Choose it again.
