@@ -90,8 +90,8 @@ That's it. RISC OS itself is in the download:
   that RISC OS can see the disc below.
 - **A minimal guest file system** — the disc RISC OS boots from: a
   cut-down version of RISC OS Open's own disc, with the desktop and its
-  Configure tools, NetSurf, StrongED, PipeDream, the manuals, and a
-  shelf of utilities and games. No developer tools and no app store —
+  Configure tools, NetSurf, StrongED, PipeDream, Ovation Pro and a shelf
+  of utilities. No developer tools, no app store, no manuals, no games —
   enough to use, small enough to download.
 
 There is nothing to fetch from anywhere else and nothing to set up.
