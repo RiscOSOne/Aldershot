@@ -12,7 +12,7 @@ itself — just these pages and, when things are ready, the downloads.
 
 | | | |
 | --- | --- | --- |
-| 🍎 | **[RISC OS for the Mac](#risc-os-for-the-mac)** | Works. No download yet — see below. |
+| 🍎 | **[RISC OS for the Mac](#risc-os-for-the-mac)** | Works. Packaged as a Mac app, RISC OS included — see below. |
 | 🪟 | **[RISC OS for Windows](#risc-os-for-windows)** | Works. No download yet — see below. |
 
 More will be added as they become worth your time. Something is listed
@@ -33,6 +33,10 @@ open the app and RISC OS starts up.
 
 - **Use the desktop** — windows, menus, the icon bar, the lot
 - **Browse the web** with NetSurf, over your Mac's internet connection
+- **Share files with your Mac** — the RISC OS disc is a folder called
+  RISCOS in your home folder. Drop a file in there on the Mac and it's
+  inside RISC OS; save something in RISC OS and it's there on the Mac.
+  This is the thing emulators usually make hard.
 - **Hear it** — sound comes out of your Mac's speakers
 - **Type and click** normally
 - **Fill your screen** — see below
@@ -75,33 +79,51 @@ Option-click and Shift-click also give you Adjust, if either is comfier.
 
 ### What you'll need
 
-**A Mac with Apple silicon** — an M1 or newer.
+**A Mac with Apple silicon** — an M1 or newer — running **macOS 26** or
+later.
 
-**RISC OS itself**, which you download once, free, from the people who
-make it: [RISC OS Open](https://www.riscosopen.org/content/downloads/raspberry-pi).
-You want the **RPi ROM stable** download and the **RISC OS Pi** one.
+That's it. RISC OS itself is in the download:
 
-We can't include RISC OS in the download. It isn't ours to give away —
-it's RISC OS Open's, and they'd rather you got it from them. It's free
-and it takes a minute.
+- **The ROM** — RISC OS 5.30 from [RISC OS Open](https://www.riscosopen.org),
+  the people who make RISC OS. It is their Raspberry Pi release, published
+  under the Apache 2.0 licence, with our HostFS filing system added so
+  that RISC OS can see the disc below.
+- **A minimal guest file system** — the disc RISC OS boots from: a
+  cut-down version of RISC OS Open's own disc, with the desktop and its
+  Configure tools, NetSurf, StrongED, PipeDream, the manuals, and a
+  shelf of utilities and games. No developer tools and no app store —
+  enough to use, small enough to download.
+
+There is nothing to fetch from anywhere else and nothing to set up.
+
+### Installing it
+
+Open the disk image and drag **RISCOSQEA72v1** to Applications. The
+first time you open it, macOS will say it can't check the app for
+malicious software — it isn't notarised yet. Open **System Settings >
+Privacy & Security**, scroll down, click **Open Anyway**, and open it
+again. That's a one-off.
+
+On its first run the app puts the RISC OS disc in your home folder, as
+**RISCOS**, and boots from it. That folder is your disc from then on; a
+later version of the app never replaces it.
 
 ### Before you get excited
 
-**There is no download yet.** It runs, and it runs well, but it hasn't
-been packaged up into something you can double-click and install. That's
-coming. Right now you'd have to build it yourself, which is a job for
-someone comfortable with a command line.
+**This is a first release** — RISCOSQEA72v1. It runs, and it runs well,
+but it hasn't had the polish a finished thing deserves. A few honest
+notes:
 
-A few other honest notes:
-
-- You can't drag files from your Mac into RISC OS yet. Anything you want
-  in there has to be on the disc image already.
+- It isn't notarised yet, so macOS makes you say "Open Anyway" once —
+  see *Installing it*, above.
+- It needs macOS 26. Older systems will refuse to run it, for now.
 - The volume control inside RISC OS doesn't do anything — use your Mac's.
 - The first few seconds of startup are slower than they ought to be.
+- On a high-resolution screen the window opens small — one RISC OS pixel
+  to one screen pixel. Drag it bigger; the picture scales.
 
-It's a young project. It works, and it's genuinely usable, but it hasn't
-had the polish a finished thing deserves. If that sounds fine to you,
-you'll get on with it well.
+It's a young project. It works, and it's genuinely usable. If that
+sounds fine to you, you'll get on with it well.
 
 ---
 
@@ -172,12 +194,11 @@ pointer ever gets out of step with your mouse, middle-click or press
 
 **RISC OS itself**, which you download once, free, from the people who
 make it: [RISC OS Open](https://www.riscosopen.org/content/downloads/raspberry-pi).
-You want the **RPi ROM stable** download and the **RISC OS Pi** one —
-the same downloads as the Mac.
+You want the **RPi ROM stable** download and the **RISC OS Pi** one.
 
-We can't include RISC OS in the download. It isn't ours to give away —
-it's RISC OS Open's, and they'd rather you got it from them. It's free
-and it takes a minute.
+The Windows download doesn't yet include RISC OS — the Mac one does,
+see above — so you fetch it once from RISC OS Open. It's free and it
+takes a minute.
 
 ### One thing to know before you use it
 
@@ -209,8 +230,9 @@ but it hasn't had the polish a finished thing deserves.
 
 ## Downloads
 
-Nothing to download yet. When there is, it'll be on this repository's
-**Releases** page.
+Look on this repository's **Releases** page. The Mac download is a disk
+image, `RISCOSQEA72v1.dmg` — open it and drag the app to Applications,
+as above. Nothing for Windows yet.
 
 ---
 
@@ -225,8 +247,12 @@ Windows ones that's [RISCOSQEMUA72](https://github.com/albanread/RISCOSQEMUA72),
 where you'll find a long and fairly candid account of how they were
 built, if you're curious about that sort of thing.
 
-**RISC OS itself is not distributed here**, in any form. It belongs to
-RISC OS Open Ltd and you get it from them.
+**RISC OS is included in the Mac download**: RISC OS 5.30 as published
+by RISC OS Open Ltd under the Apache 2.0 licence, with our HostFS module
+added, plus a minimal guest file system drawn from their disc image. The
+applications on that disc belong to their authors and keep their own
+licences. The Windows download does not include RISC OS; you get it
+from RISC OS Open.
 
 ## Standing on
 
@@ -234,6 +260,10 @@ The Mac application is built on **[QEMU](https://www.qemu.org)**, the
 machine emulator that does the hard part — pretending to be a Raspberry
 Pi convincingly enough that RISC OS never notices. Our thanks to everyone
 who built it.
+
+**[RISC OS Open Ltd](https://www.riscosopen.org)** make RISC OS 5 and
+publish it as open source. The ROM and the disc contents in the Mac
+download are theirs.
 
 **The source for what we release is here:**
 
