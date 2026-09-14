@@ -12,11 +12,14 @@ itself — just these pages and, when things are ready, the downloads.
 
 | | | |
 | --- | --- | --- |
-| 🍎 | **[RISC OS for the Mac](#risc-os-for-the-mac)** | Works. Packaged as a Mac app, RISC OS included — see below. |
+| 🍎 | **[RISC OS for the Mac](#risc-os-for-the-mac)** | Works. **[Download RISCOSQEA72v1](https://github.com/albanread/Aldershot/releases/tag/RISCOSQEA72v1)** for Apple silicon · [User guide](mac/user-guide.md) |
 | 🪟 | **[RISC OS for Windows](#risc-os-for-windows)** | Works. No download yet — see below. |
 
 More will be added as they become worth your time. Something is listed
 here when it actually runs, not when it is started.
+
+Curious how it works? The [developer walkthroughs](walkthroughs/README.md)
+tell the whole story, from the first boot in QEMU to the files on your disc.
 
 ---
 
@@ -28,6 +31,8 @@ icon bar, the Filer, NetSurf — the real thing, not a picture of it.
 It works by pretending to be a Raspberry Pi, which is the machine RISC OS
 is built for these days. You do not have to know or care about that; you
 open the app and RISC OS starts up.
+
+> **[Download RISCOSQEA72v1 for Apple silicon](https://github.com/albanread/Aldershot/releases/tag/RISCOSQEA72v1)** · [User guide](mac/user-guide.md)
 
 ### What you can do with it
 
@@ -106,6 +111,10 @@ On its first run the app asks where to keep the RISC OS disc: a folder
 called **RISCOS** in your home folder, or one you choose. That folder is
 your disc from then on; a later version of the app never replaces it,
 and holding down **Option** as the app starts lets you choose again.
+
+The [user guide](mac/user-guide.md) covers the rest: the mouse and
+keyboard, screen sizes, how files cross between the Mac and RISC OS, and
+what to do when something goes wrong.
 
 ### Before you get excited
 
@@ -227,9 +236,27 @@ but it hasn't had the polish a finished thing deserves.
 
 ## Downloads
 
-Look on this repository's **Releases** page. The Mac download is a disk
-image, `RISCOSQEA72v1.dmg` — open it and drag the app to Applications,
-as above. Nothing for Windows yet.
+- **Mac, Apple silicon:** [RISCOSQEA72v1](https://github.com/albanread/Aldershot/releases/tag/RISCOSQEA72v1), a disk image. Open it
+  and drag the app to Applications. Read the [user guide](mac/user-guide.md).
+- **Windows:** nothing to download yet.
+
+Every release is on this repository's
+[Releases](https://github.com/albanread/Aldershot/releases) page.
+
+---
+
+## For developers
+
+The [developer walkthroughs](walkthroughs/README.md) explain how all of
+this was built, for anyone who wants to understand it or work on it:
+
+- [RISC OS on a Pi 4, in QEMU](walkthroughs/QemuA72Walkthrough/index.md) — start here
+- [Fake it in software](walkthroughs/FakeItInSoftwareWalkthrough/index.md)
+- [Graphics and sound, done by the host](walkthroughs/GraphicsSoundWalkthrough/index.md)
+- [HostFS: a host directory as a RISC OS disc](walkthroughs/HostFSWalkthrough/index.md)
+- [Mojo for RISC OS](walkthroughs/MojoRISCOSWalkthrough/index.md)
+
+Each one is also a single PDF.
 
 ---
 
@@ -240,9 +267,9 @@ The software is free and open source, under the
 uses, which the Mac application is built from.
 
 Each project also keeps its own code in its own place. For the Mac and
-Windows ones that's [RISCOSQEMUA72](https://github.com/albanread/RISCOSQEMUA72),
-where you'll find a long and fairly candid account of how they were
-built, if you're curious about that sort of thing.
+Windows ones that's [RISCOSQEMUA72](https://github.com/albanread/RISCOSQEMUA72).
+The [walkthroughs](walkthroughs/README.md) are a long and fairly candid
+account of how they were built, if you're curious about that sort of thing.
 
 **RISC OS is included in the Mac download**: RISC OS 5.30 as published
 by RISC OS Open Ltd under the Apache 2.0 licence, with our HostFS module
