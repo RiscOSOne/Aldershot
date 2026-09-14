@@ -33,10 +33,10 @@ open the app and RISC OS starts up.
 
 - **Use the desktop** — windows, menus, the icon bar, the lot
 - **Browse the web** with NetSurf, over your Mac's internet connection
-- **Share files with your Mac** — the RISC OS disc is a folder called
-  RISCOS in your home folder. Drop a file in there on the Mac and it's
-  inside RISC OS; save something in RISC OS and it's there on the Mac.
-  This is the thing emulators usually make hard.
+- **Share files with your Mac** — the RISC OS disc is a folder on your
+  Mac, one you choose the first time. Drop a file in there on the Mac
+  and it's inside RISC OS; save something in RISC OS and it's there on
+  the Mac. This is the thing emulators usually make hard.
 - **Hear it** — sound comes out of your Mac's speakers
 - **Type and click** normally
 - **Fill your screen** — see below
@@ -98,15 +98,14 @@ There is nothing to fetch from anywhere else and nothing to set up.
 
 ### Installing it
 
-Open the disk image and drag **RISCOSQEA72v1** to Applications. The
-first time you open it, macOS will say it can't check the app for
-malicious software — it isn't notarised yet. Open **System Settings >
-Privacy & Security**, scroll down, click **Open Anyway**, and open it
-again. That's a one-off.
+Open the disk image and drag **RISCOSQEA72v1** to Applications, then
+open it. It is signed and notarised, so macOS only asks, the first time,
+whether you're sure about an app you downloaded.
 
-On its first run the app puts the RISC OS disc in your home folder, as
-**RISCOS**, and boots from it. That folder is your disc from then on; a
-later version of the app never replaces it.
+On its first run the app asks where to keep the RISC OS disc: a folder
+called **RISCOS** in your home folder, or one you choose. That folder is
+your disc from then on; a later version of the app never replaces it,
+and holding down **Option** as the app starts lets you choose again.
 
 ### Before you get excited
 
@@ -114,8 +113,6 @@ later version of the app never replaces it.
 but it hasn't had the polish a finished thing deserves. A few honest
 notes:
 
-- It isn't notarised yet, so macOS makes you say "Open Anyway" once —
-  see *Installing it*, above.
 - It needs macOS 26. Older systems will refuse to run it, for now.
 - The volume control inside RISC OS doesn't do anything — use your Mac's.
 - The first few seconds of startup are slower than they ought to be.
