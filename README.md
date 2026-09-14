@@ -2,6 +2,10 @@
 
 **RISC OS, on the computer you already own.**
 
+> ⚠️ **This is brand-new software.** It's early days: it works and it's
+> usable today, but you may meet the odd rough edge. If something doesn't
+> behave, please let us know.
+
 This is the front door. It is where you find out what exists, whether it
 works yet, and where to get it. There is no source code in this
 repository — just these pages, the user guide, the developer
@@ -43,7 +47,7 @@ open the app and RISC OS starts up.
 - **Share files with your Mac** — the RISC OS disc is a folder on your
   Mac, one you choose the first time. Drop a file in there on the Mac
   and it's inside RISC OS; save something in RISC OS and it's there on
-  the Mac. This is the thing emulators usually make hard.
+  the Mac.
 - **Hear it** — sound comes out of your Mac's speakers
 - **Type and click** normally
 - **Fill your screen** — see below
@@ -53,18 +57,16 @@ the app to a desktop you can use.
 
 ### Screen sizes
 
-RISC OS is not stuck at the small sizes an emulator usually gives you. It
-offers the same list a real monitor would, and you pick from RISC OS's own
-Display Manager while it is running:
+RISC OS offers a range of screen sizes; you pick one from its own Display
+Manager while it is running:
 
 640×480 · 800×600 · 1024×768 · 1280×720 · 1280×800 · 1280×1024 ·
 1440×900 · 1600×1200 · 1920×1080 · **1920×1200**
 
-The last two are the interesting ones on a Mac. **1920×1200** is 16:10,
-which is the shape of a MacBook screen, so a RISC OS desktop fills it
-properly rather than sitting in a letterbox — and on a Retina display it
-lands one RISC OS pixel to one screen pixel, which is about as sharp as
-it gets.
+The last two are the useful ones on a Mac. **1920×1200** is 16:10, the
+shape of a MacBook screen, so a RISC OS desktop fills it rather than
+sitting in a letterbox; on a Retina display it maps one RISC OS pixel to
+one screen pixel, which looks crisp.
 
 You can also start up in a particular size rather than picking one each
 time. The window opens to match whatever RISC OS is running, and you can
@@ -128,21 +130,21 @@ The [user guide](mac/user-guide.md) covers the rest: the mouse and
 keyboard, screen sizes, how files cross between the Mac and RISC OS, and
 what to do when something goes wrong.
 
-### Before you get excited
+### Good to know
 
-**This is a first release** — RISCOSQEA72v1. It runs, and it runs well,
-but it hasn't had the polish a finished thing deserves. A few honest
+**This is a first release** — RISCOSQEA72v1. It's early software: it
+works and it's usable, with a few edges still to smooth. A few honest
 notes:
 
-- It needs macOS 26. A Mac on an older version of macOS will refuse to
-  open it, for now.
+- It needs macOS 26. A Mac on an older version of macOS won't open it,
+  for now.
 - The volume control inside RISC OS doesn't do anything — use your Mac's.
-- The first few seconds of startup are slower than they ought to be.
+- The first few seconds of startup are slower than they will be.
 - On a high-resolution screen the window opens small — one RISC OS pixel
   to one screen pixel. Drag it bigger; the picture scales.
 
-It's a young project. It works, and it's genuinely usable. If that
-sounds fine to you, you'll get on with it well.
+It's a young project and an active one. If that sounds fine to you,
+you'll get on with it well.
 
 ---
 
@@ -164,8 +166,7 @@ OS boots.
   shows up inside RISC OS as a disc called HostFS. Copy files both
   ways: drop a file in the folder on Windows, and it's there in RISC
   OS; save one in RISC OS, and it appears in the folder. This one is
-  worth knowing about, because it's the thing emulators usually make
-  hard.
+  worth knowing about.
 - **Save the whole machine** — take a snapshot from the window menu,
   and later pick up exactly where you left off, in under a second
   instead of waiting for a boot
@@ -173,16 +174,14 @@ OS boots.
 - **Type and click** normally
 - **Fill your screen** — see below
 
-It takes about **a minute and a half** from starting it to a desktop
-you can use. Yes, the Mac one says twenty seconds; yes, that is
-annoying. A snapshot resume is under a second, which takes the sting
-out of it.
+It takes about **a minute and a half** from starting it to a desktop you
+can use — and a snapshot resume is under a second, so most of the time
+you're not waiting for a boot at all.
 
 ### Screen sizes
 
-RISC OS is not stuck at the small sizes an emulator usually gives you.
-It offers the same list a real monitor would, and you pick from RISC OS's
-own Display Manager while it's running:
+RISC OS offers a range of screen sizes; you pick one from its own Display
+Manager while it's running:
 
 640×480 · 800×600 · 1024×768 · 1280×720 · 1280×800 · 1280×1024 ·
 1440×900 · 1600×1200 · 1920×1080 · **1920×1200**
@@ -226,10 +225,10 @@ RISC OS down properly, like switching off a real machine. Please don't
 end it from Task Manager — that's yanking the plug out mid-write, and
 discs (real or emulated) don't like it.
 
-### Before you get excited
+### Where it's at
 
-**There is no download yet.** It runs, and it runs well, but it hasn't
-been packaged up into something you can double-click and install.
+**There is no download yet.** It runs well, but it hasn't been packaged
+up into something you can double-click and install.
 That's coming. Right now you'd have to build it yourself, which is a
 job for someone comfortable with a command line.
 
