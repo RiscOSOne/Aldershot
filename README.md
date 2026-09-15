@@ -1,3 +1,9 @@
+> [!CAUTION]
+> 🛑 **REPOSITORY CLOSED — UNMAINTAINED.**
+>
+> Do not assume the reliability of any data in this repository. It will be
+> archived on **15 October 2026**.
+
 # Aldershot
 
 **RISC OS, on the computer you already own.**
