@@ -301,7 +301,9 @@ this was built, for anyone who wants to understand it or work on it:
 - [RISC OS on a Pi 4, in QEMU](walkthroughs/QemuA72Walkthrough/index.md) — start here
 - [Fake it in software](walkthroughs/FakeItInSoftwareWalkthrough/index.md)
 - [Graphics and sound, done by the host](walkthroughs/GraphicsSoundWalkthrough/index.md)
+- [The backdrop layer: a background the host draws beneath RISC OS](walkthroughs/BackdropWalkthrough/index.md)
 - [HostFS: a host directory as a RISC OS disc](walkthroughs/HostFSWalkthrough/index.md)
+- [HostNet: the guest's sockets, served by the host](walkthroughs/HostNetWalkthrough/index.md)
 - [Mojo for RISC OS](walkthroughs/MojoRISCOSWalkthrough/index.md)
 
 Each one is also a single PDF.
