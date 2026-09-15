@@ -9,7 +9,7 @@
 This is the front door. It is where you find out what exists, whether it
 works yet, and where to get it. There is no source code in this
 repository — just these pages, the user guide, the developer
-walkthroughs, and the downloads on the
+walkthroughs and case notes, and the downloads on the
 [Releases](https://github.com/albanread/Aldershot/releases) page.
 
 ---
@@ -307,6 +307,11 @@ this was built, for anyone who wants to understand it or work on it:
 - [Mojo for RISC OS](walkthroughs/MojoRISCOSWalkthrough/index.md)
 
 Each one is also a single PDF.
+
+The [case notes](case-notes/README.md) file problems met while running
+real software on the emulator, with the evidence and what is still open.
+The first is
+[WimpForth: an fsave that aborts the machine](case-notes/2026-09-15-wimpforth-fsave-abort/index.md).
 
 ---
 
