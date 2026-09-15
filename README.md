@@ -245,9 +245,7 @@ alone and asks for no administrator rights, and puts **RISC OS on QEMU
 (A72)** on your desktop and in the Start menu.
 
 The setup program isn't code-signed yet, so Windows may say it protected
-your PC. Choose **More info**, then **Run anyway**. The
-[release notes](https://github.com/albanread/Aldershot/releases/tag/RISCOSQEA72v7-windows) have its checksum, if you'd like to check the
-download first.
+your PC. Choose **More info**, then **Run anyway**.
 
 The disc is the **RISCOSQEA72** folder in your user folder. Installing a
 later version never replaces your files there, and uninstalling leaves
@@ -288,7 +286,7 @@ but it hasn't had the polish a finished thing deserves.
   [user guide](mac/user-guide.md) the rest.
 - **Windows, 64-bit Windows 10 or 11:** RISCOSQEA72v7, a
   [setup program](https://github.com/albanread/Aldershot/releases/download/RISCOSQEA72v7-windows/RISCOSQEA72v7-setup.exe). Run it; it installs for you alone.
-  The [release page](https://github.com/albanread/Aldershot/releases/tag/RISCOSQEA72v7-windows) has the checksum and the release notes.
+  The [release page](https://github.com/albanread/Aldershot/releases/tag/RISCOSQEA72v7-windows) has the release notes.
 
 Every release is on this repository's
 [Releases](https://github.com/albanread/Aldershot/releases) page.
