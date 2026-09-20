@@ -1,16 +1,3 @@
-> [!CAUTION]
-> 🛑 **REPOSITORY CLOSED — UNMAINTAINED.**
->
-> Do not assume the reliability of any data in this repository. It will be
-> archived on **15 October 2026**.
-
-# Aldershot
-
-**RISC OS, on the computer you already own.**
-
-> ⚠️ **This is brand-new software.** It's early days: it works and it's
-> usable today, but you may meet the odd rough edge. If something doesn't
-> behave, please let us know.
 
 This is the front door. It is where you find out what exists, whether it
 works yet, and where to get it. There is no source code in this
